@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "reviewText": "The coffee at this shop is absolutely fantastic! Every cup is brewed to perfection, and the aroma alone is enough to draw you in. I can't recommend it enough.",
+    "customerName": "Emily Johnson",
+    "feeling": "Satisfied",
+    "img": "https://i.ibb.co/xfb44FZ/rev1.jpg"
+  },
+  {
+    "id": 2,
+    "reviewText": "As a coffee aficionado, I'm always on the lookout for the best brews in town. This shop exceeded my expectations with their unique blends and friendly staff. A must-visit for any coffee lover!",
+    "customerName": "Michael Smith",
+    "feeling": "Delighted",
+    "img": "https://i.ibb.co/KwK3Rnb/rev2.jpg"
+  },
+  {
+    "id": 3,
+    "reviewText": "I stumbled upon this cozy coffee shop while exploring the neighborhood, and I'm so glad I did! The atmosphere is warm and inviting, and the coffee is top-notch. Will definitely be returning soon.",
+    "customerName": "Sophia Lee",
+    "feeling": "Pleasantly surprised",
+    "img": "https://i.ibb.co/RjpNkTH/rev3.jpg"
+  }
+]

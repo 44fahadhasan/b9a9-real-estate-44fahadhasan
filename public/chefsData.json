@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "chefsName": "Julia Smith",
+    "img": "https://i.ibb.co/hRgnD2H/team1.jpg",
+    "level": "Executive Chef",
+    "email": "julia@example.com",
+    "phone": "+1234567890",
+    "facebook": "https://www.facebook.com/julia.smith",
+    "twitter": "https://twitter.com/juliasmithchef",
+    "youTube": "https://www.youtube.com/user/juliasmithcooking"
+  },
+  {
+    "id": 2,
+    "chefsName": "Antonio Rodriguez",
+    "img": "https://i.ibb.co/M7sH8Zv/team2.jpg",
+    "level": "Sous Chef",
+    "email": "antonio@example.com",
+    "phone": "+1987654321",
+    "facebook": "https://www.facebook.com/antonio.rodriguez",
+    "twitter": "https://twitter.com/antoniorodchef",
+    "youTube": "https://www.youtube.com/user/antoniorodcooking"
+  },
+  {
+    "id": 3,
+    "chefsName": "Sophie Johnson",
+    "img": "https://i.ibb.co/yd9qL4s/team3.jpg",
+    "level": "Head Pastry Chef",
+    "email": "sophie@example.com",
+    "phone": "+1122334455",
+    "facebook": "https://www.facebook.com/sophie.johnson",
+    "twitter": "https://twitter.com/sophiechefpastry",
+    "youTube": "https://www.youtube.com/user/sophiepastrychef"
+  },
+  {
+    "id": 4,
+    "chefsName": "Carlos Garcia",
+    "img": "https://i.ibb.co/fCWLv29/team4.jpg",
+    "level": "Chef de Cuisine",
+    "email": "carlos@example.com",
+    "phone": "+1567890123",
+    "facebook": "https://www.facebook.com/carlos.garcia",
+    "twitter": "https://twitter.com/carlosgarcchef",
+    "youTube": "https://www.youtube.com/user/carlosgarccooking"
+  },
+  {
+    "id": 5,
+    "chefsName": "Linda Chen",
+    "img": "https://i.ibb.co/nB7zM0M/team5.jpg",
+    "level": "Sous Chef",
+    "email": "linda@example.com",
+    "phone": "+1209876543",
+    "facebook": "https://www.facebook.com/linda.chen",
+    "twitter": "https://twitter.com/lindachef",
+    "youTube": "https://www.youtube.com/user/lindacooking"
+  },
+  {
+    "id": 6,
+    "chefsName": "Mikhail Ivanov",
+    "img": "https://i.ibb.co/M5KXbFv/team6.jpg",
+    "level": "Chef de Partie",
+    "email": "mikhail@example.com",
+    "phone": "+1999888777",
+    "facebook": "https://www.facebook.com/mikhail.ivanov",
+    "twitter": "https://twitter.com/mikhailchef",
+    "youTube": "https://www.youtube.com/user/mikhailcook"
+  },
+  {
+    "id": 7,
+    "chefsName": "Emily Brown",
+    "img": "https://i.ibb.co/SV0wjBp/team7.jpg",
+    "level": "Line Cook",
+    "email": "emily@example.com",
+    "phone": "+1777888999",
+    "facebook": "https://www.facebook.com/emily.brown",
+    "twitter": "https://twitter.com/emilychef",
+    "youTube": "https://www.youtube.com/user/emilycooking"
+  },
+  {
+    "id": 8,
+    "chefsName": "David Nguyen",
+    "img": "https://i.ibb.co/ftwcsKC/team8.jpg",
+    "level": "Commis Chef",
+    "email": "david@example.com",
+    "phone": "+1444555666",
+    "facebook": "https://www.facebook.com/david.nguyen",
+    "twitter": "https://twitter.com/davidchef",
+    "youTube": "https://www.youtube.com/user/davidcooking"
+  }
+]
