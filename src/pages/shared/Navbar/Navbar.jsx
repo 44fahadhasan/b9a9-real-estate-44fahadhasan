@@ -1,12 +1,13 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../assets/images/logo.png";
+import Tost from "../../../components/Tost/Tost";
 import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
   const [toggleMenuIcon, setToggleMenuIcon] = useState(true);
-
   const { userLogOut, user } = useAuth();
 
   const handelToggleMenu = () => {
@@ -14,8 +15,13 @@ const Navbar = () => {
   };
 
   const handleLogOut = () => {
-    console.log("lg ut");
-    userLogOut();
+    userLogOut()
+      .then(() => {
+        toast.success("Logout successfully");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
 
   const userProfile = (
@@ -29,7 +35,7 @@ const Navbar = () => {
           role="button"
           className="btn btn-ghost btn-circle avatar"
         >
-          <div className="w-10 rounded-full ring-4 ring-secondary hover:ring-primary transition-all duration-300">
+          <div className="w-10 rounded-full">
             <img
               alt="Profile"
               src={
@@ -83,6 +89,7 @@ const Navbar = () => {
 
   return (
     <>
+      <Tost />
       <div className="roboto bg-base-100 flex justify-between items-center py-5 px-[30px]">
         {/* logo */}
         <div className="w-[118px]">
