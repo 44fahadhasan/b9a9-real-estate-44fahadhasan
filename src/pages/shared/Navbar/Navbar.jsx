@@ -96,8 +96,8 @@ const Navbar = () => {
               >
                 <div className="w-10 rounded-full">
                   <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    alt="Fahad Hasan"
+                    src="https://lh3.googleusercontent.com/a/ACg8ocJ9CcUrelnj2GcbhstlxBi19Dym9r9XnT94U5VIq7rCzdHZTTZ_=s288-c-no"
                   />
                 </div>
               </div>
