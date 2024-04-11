@@ -9,6 +9,7 @@ import OurChefs from "../pages/OurChefs/OurChefs";
 import Reservation from "../pages/Reservation/Reservation";
 import SignUp from "../pages/SignUp/SignUp";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import PrivateRoutes from "./PrivateRoutes";
 
 const routes = createBrowserRouter([
   {
@@ -30,7 +31,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "reservation",
-        element: <Reservation />,
+        element: (
+          <PrivateRoutes>
+            <Reservation />
+          </PrivateRoutes>
+        ),
       },
       {
         path: "contacts",

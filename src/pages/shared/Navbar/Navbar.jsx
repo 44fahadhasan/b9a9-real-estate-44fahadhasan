@@ -2,16 +2,88 @@ import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../assets/images/logo.png";
+import useAuth from "../../../hooks/useAuth";
+
 const Navbar = () => {
   const [toggleMenuIcon, setToggleMenuIcon] = useState(true);
+
+  const { userLogOut, user } = useAuth();
 
   const handelToggleMenu = () => {
     setToggleMenuIcon(!toggleMenuIcon);
   };
 
+  const handleLogOut = () => {
+    console.log("lg ut");
+    userLogOut();
+  };
+
+  const userProfile = (
+    <div className="dropdown dropdown-end">
+      <div
+        className="tooltip tooltip-left"
+        data-tip={user?.displayName || "Name isn't available"}
+      >
+        <div
+          tabIndex={0}
+          role="button"
+          className="btn btn-ghost btn-circle avatar"
+        >
+          <div className="w-10 rounded-full ring-4 ring-secondary hover:ring-primary transition-all duration-300">
+            <img
+              alt="Profile"
+              src={
+                user?.photoURL ||
+                "https://media.istockphoto.com/id/1455787504/vector/round-anonymous-person-icon-vector.jpg?s=1024x1024&w=is&k=20&c=6Zhn2vgAOOh4nljgJqJ_wjYCY_c2rWcxyFeMq698BYk="
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <ul
+        tabIndex={0}
+        className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-white rounded-box w-40"
+      >
+        <li>
+          <Link to="update-profile">Update Profile</Link>
+        </li>
+      </ul>
+    </div>
+  );
+
+  const userToggle = (
+    <div className="text-lg">
+      {user ? (
+        <button
+          onClick={() => {
+            handleLogOut();
+            setToggleMenuIcon(!toggleMenuIcon);
+          }}
+          className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-primary rounded hover:bg-primary group"
+        >
+          <span className="w-48 h-48 rounded rotate-[-40deg] bg-secondary absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span className="relative w-full text-left text-secondary transition-colors duration-300 ease-in-out group-hover:text-primary">
+            Logout
+          </span>
+        </button>
+      ) : (
+        <Link
+          to="/login"
+          onClick={() => setToggleMenuIcon(!toggleMenuIcon)}
+          className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-primary rounded hover:bg-primary group"
+        >
+          <span className="w-48 h-48 rounded rotate-[-40deg] bg-secondary absolute bottom-0 left-0 -translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span className="relative w-full text-left text-secondary transition-colors duration-300 ease-in-out group-hover:text-primary">
+            Login
+          </span>
+        </Link>
+      )}
+    </div>
+  );
+
   return (
     <>
-      <div className="flex justify-between items-center py-5 px-[30px]">
+      <div className="roboto bg-base-100 flex justify-between items-center py-5 px-[30px]">
         {/* logo */}
         <div className="w-[118px]">
           <Link to="/">
@@ -21,14 +93,12 @@ const Navbar = () => {
 
         {/* menu for large device */}
         <div className="hidden md:block">
-          <ul className="flex gap-7 font-medium">
+          <ul className="flex gap-7 font-medium text-lg ">
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-primary border-primary border-2 rounded-md px-3.5 py-2 "
-                    : "text-primary "
+                  isActive ? "text-primary" : "text-secondary"
                 }
               >
                 Home
@@ -38,9 +108,7 @@ const Navbar = () => {
               <NavLink
                 to="coffe-menu"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-primary border-primary border-2 rounded-md px-3.5 py-2 "
-                    : "text-primary "
+                  isActive ? "text-primary" : "text-secondary"
                 }
               >
                 Coffee Menu
@@ -50,9 +118,7 @@ const Navbar = () => {
               <NavLink
                 to="our-chefs"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-primary border-primary border-2 rounded-md px-3.5 py-2 "
-                    : "text-primary "
+                  isActive ? "text-primary" : "text-secondary"
                 }
               >
                 Our Chefs
@@ -62,9 +128,7 @@ const Navbar = () => {
               <NavLink
                 to="reservation"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-primary border-primary border-2 rounded-md px-3.5 py-2 "
-                    : "text-primary "
+                  isActive ? "text-primary" : "text-secondary"
                 }
               >
                 Book a table
@@ -74,9 +138,7 @@ const Navbar = () => {
               <NavLink
                 to="contacts"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-primary border-primary border-2 rounded-md px-3.5 py-2 "
-                    : "text-primary "
+                  isActive ? "text-primary" : "text-secondary"
                 }
               >
                 Contacts
@@ -87,46 +149,12 @@ const Navbar = () => {
 
         {/* login & logout button for large device */}
         <div className="hidden md:flex items-center space-x-4 ">
-          <div className="dropdown dropdown-end">
-            <div className="tooltip tooltip-left" data-tip="User Name">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost btn-circle avatar"
-              >
-                <div className="w-10 rounded-full">
-                  <img
-                    alt="Fahad Hasan"
-                    src="https://lh3.googleusercontent.com/a/ACg8ocJ9CcUrelnj2GcbhstlxBi19Dym9r9XnT94U5VIq7rCzdHZTTZ_=s288-c-no"
-                  />
-                </div>
-              </div>
-            </div>
-            <ul
-              tabIndex={0}
-              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-white rounded-box w-40"
-            >
-              <li>
-                <Link to="update-profile">Update Profile</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <Link
-              to="/login"
-              className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
-            >
-              <span className="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-              <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                Login
-              </span>
-            </Link>
-          </div>
+          {user && userProfile}
+          {userToggle}
         </div>
 
         {/* menu icon for mobile device */}
-        <div className="md:hidden text-2xl text-primary">
+        <div className="md:hidden text-2xl text-secondary hover:text-primary">
           {toggleMenuIcon ? (
             <AiOutlineMenu onClick={handelToggleMenu} title="show menu" />
           ) : (
@@ -137,7 +165,7 @@ const Navbar = () => {
 
       {/* mobile device */}
       <div
-        className={` absolute w-full mx-auto h-min bg-slate-50 py-6 font-medium rounded-lg mt-4 z-[900] ${
+        className={`md:hidden absolute w-full mx-auto h-min bg-base-100 py-6 font-medium z-[900] border-y-2 border-base-200 ${
           toggleMenuIcon && "hidden"
         }`}
       >
@@ -147,7 +175,7 @@ const Navbar = () => {
               onClick={() => setToggleMenuIcon(!toggleMenuIcon)}
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-primary" : "text-primary "
+                isActive ? "text-primary" : "text-secondary"
               }
             >
               Home
@@ -156,87 +184,53 @@ const Navbar = () => {
           <li>
             <NavLink
               onClick={() => setToggleMenuIcon(!toggleMenuIcon)}
-              to="listedbooks"
+              to="coffe-menu"
               className={({ isActive }) =>
-                isActive ? "text-primary" : "text-primary "
+                isActive ? "text-primary" : "text-secondary"
               }
             >
-              Listed Books
+              Coffee Menu
             </NavLink>
           </li>
           <li>
             <NavLink
               onClick={() => setToggleMenuIcon(!toggleMenuIcon)}
-              to="pagesread"
+              to="our-chefs"
               className={({ isActive }) =>
-                isActive ? "text-primary" : "text-primary "
+                isActive ? "text-primary" : "text-secondary"
               }
             >
-              Pages to Read
+              Our Chefs
             </NavLink>
           </li>
           <li>
             <NavLink
               onClick={() => setToggleMenuIcon(!toggleMenuIcon)}
-              to="blog"
+              to="reservation"
               className={({ isActive }) =>
-                isActive ? "text-primary" : "text-primary "
+                isActive ? "text-primary" : "text-secondary"
               }
             >
-              Blog
+              Book a table
             </NavLink>
           </li>
           <li>
             <NavLink
               onClick={() => setToggleMenuIcon(!toggleMenuIcon)}
-              to="contact"
+              to="contacts"
               className={({ isActive }) =>
-                isActive ? "text-primary" : "text-primary "
+                isActive ? "text-primary" : "text-secondary"
               }
             >
-              Contact
+              Contacts
             </NavLink>
           </li>
         </ul>
 
         {/* login & logout button for small device */}
         <div className="md:hidden flex justify-center items-center space-x-4 mt-9">
-          <div className="dropdown dropdown-end">
-            <div className="tooltip tooltip-left" data-tip="User Name">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost btn-circle avatar"
-              >
-                <div className="w-10 rounded-full">
-                  <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-            <ul
-              tabIndex={0}
-              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-white rounded-box w-40"
-            >
-              <li>
-                <a>Update Profile</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <Link
-              to="/login"
-              className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
-            >
-              <span className="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-              <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                Login
-              </span>
-            </Link>
-          </div>
+          {user && userProfile}
+          {userToggle}
         </div>
       </div>
     </>
