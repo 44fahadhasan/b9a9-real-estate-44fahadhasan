@@ -17,7 +17,7 @@ const Navbar = () => {
   const handleLogOut = () => {
     userLogOut()
       .then(() => {
-        toast.success("Logout successfully");
+        toast.success("successfully Logout");
       })
       .catch((error) => {
         toast.error(error.message);

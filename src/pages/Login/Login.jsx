@@ -25,7 +25,7 @@ const Login = () => {
       .then(() => {
         // Signed in
         navigate(`${location?.state || "/"}`);
-        toast.success("Login successful by email");
+        toast.success("Login successful by email account");
       })
       .catch((error) => {
         toast.error(error.message);
@@ -38,7 +38,7 @@ const Login = () => {
   const handleSocialLogin = (socialLogin) => {
     socialLogin()
       .then(() => {
-        toast.success("Login successful by social");
+        toast.success("Login successful by social account");
       })
       .catch((error) => {
         toast.error(error.message);

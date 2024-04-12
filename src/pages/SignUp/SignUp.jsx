@@ -21,11 +21,18 @@ const SignUp = () => {
     const photourl = data.photourl;
     const password = data.password;
 
+    // password checker
+    if (!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)) {
+      return toast.error(
+        "Minimum one english character lower and upper case  must be included in the password with length 6 greater than or equal"
+      );
+    }
+
     createNewUser(email, password)
       .then(() => {
         // user profile
         updateUserProfile(fullName, photourl);
-        toast.success("Created new an account successful");
+        toast.success("Created an new account successfully");
       })
       .catch((error) => {
         toast.error(error.message);
