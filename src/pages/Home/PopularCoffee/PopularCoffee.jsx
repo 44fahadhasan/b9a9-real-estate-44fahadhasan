@@ -6,7 +6,7 @@ const PopularCoffee = () => {
   const allCoffeeData = useDataLoader("/public/coffeeData.json");
 
   return (
-    <section className="min-h-screen container mx-auto w-[85%]">
+    <section className="container mx-auto w-[85%]">
       {/* section title */}
       <div>
         <SectionTitle

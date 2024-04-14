@@ -20,12 +20,12 @@ const CoffeeDetails = () => {
   return (
     <div>
       <BannerImgTitle img={bannerImg} title="Coffee Details" />
-      {/* {singleCoffeeData.map((coffeeData) => (
-        <div key={coffeeData.id}>
-            
-        </div>
-      ))} */}
-      <SingleCoffeOpen />
+
+      <div className="container mx-auto w-[85%] bg-base-100 py-[130px]">
+        {singleCoffeeData.map((data) => (
+          <SingleCoffeOpen key={data.id} coffeeData={data} />
+        ))}
+      </div>
     </div>
   );
 };

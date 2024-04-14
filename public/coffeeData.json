@@ -6,7 +6,8 @@
     "coffeeName": "Arabica Supreme Blend",
     "description": "A premium blend of Arabica beans sourced from the high altitudes of Ethiopia and Colombia. This coffee offers a smooth and rich flavor profile with notes of chocolate and citrus.",
     "price": 12.99,
-    "status": "sale"
+    "status": "sale",
+    "rating": 12
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "coffeeName": "Dark Roast Sumatran",
     "description": "Indulge in the bold and earthy flavors of our Dark Roast Sumatran coffee. Sourced from the lush regions of Sumatra, this coffee boasts a deep, smoky taste with hints of cocoa and spice.",
     "price": 10.49,
-    "status": "sale"
+    "status": "sale",
+    "rating": 32
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "coffeeName": "Espresso Italia Blend",
     "description": "Experience the quintessential Italian espresso with our Espresso Italia blend. Crafted from a blend of premium Arabica and Robusta beans, this espresso offers a bold and intense flavor profile with a lingering finish.",
     "price": 14.99,
-    "status": "sale"
+    "status": "sale",
+    "rating": 34
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "coffeeName": "Decaf Delight Blend",
     "description": "Savor the rich and smooth taste of our Decaf Delight blend, perfect for those who love coffee without the caffeine. This blend features carefully selected decaffeinated beans with a balanced flavor and low acidity.",
     "price": 11.99,
-    "status": "sale"
+    "status": "sale",
+    "rating": 65
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "coffeeName": "Single Origin Ethiopian",
     "description": "Embark on a journey to Ethiopia with our Single Origin Ethiopian coffee. Sourced from the birthplace of coffee itself, this coffee offers bright acidity, floral aroma, and fruity notes of blueberry and jasmine.",
     "price": 13.49,
-    "status": "sale"
+    "status": "sale",
+    "rating": 56
   },
   {
     "id": 6,
@@ -51,6 +56,7 @@
     "coffeeName": "House Blend",
     "description": "Our signature House Blend is a versatile and balanced coffee, perfect for any occasion. With a harmonious blend of Arabica and Robusta beans, this coffee offers a smooth and satisfying flavor with a hint of sweetness.",
     "price": 9.99,
-    "status": "sale"
+    "status": "sale",
+    "rating": 67
   }
 ]

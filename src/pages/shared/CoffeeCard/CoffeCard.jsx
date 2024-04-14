@@ -23,7 +23,7 @@ const CoffeCard = ({ coffeeData = {} }) => {
             {`${description.slice(0, 30)} ...`}
           </p>
         </div>
-        <div className="merienda text-2xl flex gap-2 items-center mt-2">
+        <div className="merienda text-xl sm:text-2xl flex gap-2 items-center mt-2">
           <div className="border-t border-dashed border-primary w-[50%]"></div>
           <div className="text-primary">${price}</div>
         </div>

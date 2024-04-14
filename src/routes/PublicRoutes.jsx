@@ -56,7 +56,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "coffee-details/:id",
-        element: <CoffeeDetails />,
+        element: (
+          <PrivateRoutes>
+            <CoffeeDetails />
+          </PrivateRoutes>
+        ),
       },
     ],
   },
