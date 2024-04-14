@@ -138,7 +138,7 @@ const Navbar = () => {
                   isActive ? "text-primary" : "text-secondary"
                 }
               >
-                Book a table
+                Reservation
               </NavLink>
             </li>
             <li>
