@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "react-medium-image-zoom/dist/styles.css";
 import { Link } from "react-router-dom";
 
-const CoffeCard = ({ coffeeData = {}, path }) => {
+const CoffeCard = ({ coffeeData = {} }) => {
   const { id, image, title, description, price, status } = coffeeData;
 
   return (
@@ -32,7 +32,7 @@ const CoffeCard = ({ coffeeData = {}, path }) => {
             {status}
           </span>
           <Link
-            to={`/${path}/${id}`}
+            to={`/coffee-details/${id}`}
             className="roboto text-primary bg-base-100 px-3 rounded-full"
           >
             view
@@ -45,7 +45,6 @@ const CoffeCard = ({ coffeeData = {}, path }) => {
 
 CoffeCard.propTypes = {
   coffeeData: PropTypes.object,
-  path: PropTypes.string,
 };
 
 export default CoffeCard;

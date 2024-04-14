@@ -24,11 +24,7 @@ const CoffeMenus = () => {
         <div className="bg-base-200 mt-[70px]">
           <div className="bg-[url('https://i.ibb.co/QryQhNt/menu-logo.png')] bg-no-repeat bg-center  bg-[length:45%_auto] grid gap-12 sm:gap-[30px] sm:grid-cols-2 py-[60px]  sm:py-[70px] sm:px-[45px]">
             {allCoffeeData.map((data) => (
-              <CoffeCard
-                key={data.id}
-                coffeeData={data}
-                path="coffee-details"
-              />
+              <CoffeCard key={data.id} coffeeData={data} />
             ))}
           </div>
         </div>
