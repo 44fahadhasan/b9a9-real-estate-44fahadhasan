@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root/Root";
 import CoffeMenus from "../pages/CoffeMenus/CoffeMenus";
+import CoffeeDetails from "../pages/CoffeeDetails/CoffeeDetails";
 import Contacts from "../pages/Contacts/Contacts";
 import Error from "../pages/Error/Error";
 import Home from "../pages/Home/Home";
@@ -52,6 +53,10 @@ const routes = createBrowserRouter([
       {
         path: "update-profile",
         element: <UpdateProfile />,
+      },
+      {
+        path: "coffee-details/:id",
+        element: <CoffeeDetails />,
       },
     ],
   },
