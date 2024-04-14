@@ -42,7 +42,7 @@
     "coffeeName": "Single Origin Ethiopian",
     "description": "Embark on a journey to Ethiopia with our Single Origin Ethiopian coffee. Sourced from the birthplace of coffee itself, this coffee offers bright acidity, floral aroma, and fruity notes of blueberry and jasmine.",
     "price": 13.49,
-    "status": "rent"
+    "status": "sale"
   },
   {
     "id": 6,
@@ -51,6 +51,6 @@
     "coffeeName": "House Blend",
     "description": "Our signature House Blend is a versatile and balanced coffee, perfect for any occasion. With a harmonious blend of Arabica and Robusta beans, this coffee offers a smooth and satisfying flavor with a hint of sweetness.",
     "price": 9.99,
-    "status": "rent"
+    "status": "sale"
   }
 ]

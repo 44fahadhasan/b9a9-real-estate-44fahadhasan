@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="roboto divide-y-2 divide-base-100 bg-base-200 text-secondary">
       {/* footer top */}
-      <div className="container mx-auto grid gap-9 justify-items-center sm:justify-items-start	  justify-center sm:grid-cols-3 lg:grid-cols-4 py-[70px]">
+      <div className="container w-[85%] mx-auto grid gap-9 justify-items-center sm:justify-items-start	  justify-center sm:grid-cols-3 lg:grid-cols-4 py-[70px]">
         {/* logo */}
         <div className="">
           <div className=" w-[118px]">

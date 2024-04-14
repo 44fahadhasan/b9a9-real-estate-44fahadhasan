@@ -90,7 +90,7 @@ const Navbar = () => {
   return (
     <>
       <Tost />
-      <div className="roboto bg-base-100 flex justify-between items-center py-5 px-[30px]">
+      <div className="roboto bg-base-100 flex justify-between items-center py-5 mx-auto w-[95%]">
         {/* logo */}
         <div className="w-[118px]">
           <Link to="/">
