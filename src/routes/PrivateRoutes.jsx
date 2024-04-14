@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Navigate, useLocation } from "react-router-dom";
+import LoadingSpinner from "../components/LoadingSpinner/LoadingSpinner";
 import useAuth from "../hooks/useAuth";
 
 const PrivateRoutes = ({ children }) => {
@@ -7,7 +8,7 @@ const PrivateRoutes = ({ children }) => {
   const location = useLocation();
 
   if (loading) {
-    return <h1>Loadding....</h1>;
+    return <LoadingSpinner />;
   }
   if (user) {
     return children;
