@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "react-medium-image-zoom/dist/styles.css";
 import { Link } from "react-router-dom";
 
 const CoffeCard = ({ coffeeData = {} }) => {

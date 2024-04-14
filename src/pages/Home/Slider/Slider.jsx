@@ -18,7 +18,7 @@ import {
 import SingleSlider from "./SingleSlider";
 
 // slider images
-import sliderImgThree from "../../../assets/images/started_img_n3.jpg";
+import sliderImgThree from "../../../assets/images/started_img_n3-overlay.jpg";
 import sliderImgTwo from "../../../assets/images/started_img_n5.jpg";
 import sliderImgOne from "../../../assets/images/started_img_n6.jpg";
 
