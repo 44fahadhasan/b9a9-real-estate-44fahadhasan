@@ -1,12 +1,14 @@
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Tost from "../../components/Tost/Tost";
 import useAuth from "../../hooks/useAuth";
 
 const SignUp = () => {
   const { createNewUser, updateUserProfile } = useAuth();
 
+  const location = useLocation();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -33,6 +35,7 @@ const SignUp = () => {
         // user profile
         updateUserProfile(fullName, photourl);
         toast.success("Created an new account successfully");
+        navigate(`${location?.state || "/"}`);
       })
       .catch((error) => {
         toast.error(error.message);
