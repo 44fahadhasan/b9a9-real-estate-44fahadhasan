@@ -1,4 +1,4 @@
-import coffeMenuBanerImg from "../../assets/images/service3.jpg";
+import coffeMenuBanerImg from "../../assets/images/service3-overlay.jpg";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import useDataLoader from "../../hooks/useDataLoader";
 import BannerImgTitle from "../shared/BannerImgTitle/BannerImgTitle";
