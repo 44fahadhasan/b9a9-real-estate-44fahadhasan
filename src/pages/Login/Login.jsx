@@ -38,6 +38,7 @@ const Login = () => {
   const handleSocialLogin = (socialLogin) => {
     socialLogin()
       .then(() => {
+        navigate(`${location?.state || "/"}`);
         toast.success("Login successful by social account");
       })
       .catch((error) => {
