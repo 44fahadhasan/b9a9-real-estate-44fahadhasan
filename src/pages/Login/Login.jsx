@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -5,6 +6,7 @@ import Tost from "../../components/Tost/Tost";
 import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
+  const [toggle, setToggle] = useState(true);
   const { userLogin, loginWithGoogle, loginWithGithub } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
@@ -45,6 +47,12 @@ const Login = () => {
         toast.error(error.message);
       });
   };
+
+  // password toggle
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className="my-[130px] container mx-auto w-[85%]">
       <div className="roboto w-full mx-auto max-w-[770px] p-8 space-y-3  bg-base-200 text-secondary border-t-[3px] border-primary">
@@ -66,13 +74,60 @@ const Login = () => {
           </div>
           <div className="space-y-1 text-base">
             <label className="block text-secondary">Password</label>
-            <input
-              {...register("password", { required: true })}
-              type="password"
-              name="password"
-              placeholder="Password"
-              className="w-full px-4 py-3 rounded-md border-secondary-content bg-base-100 text-secondary focus:border-default-400"
-            />
+            <div className="relative flex items-center">
+              <input
+                {...register("password", { required: true })}
+                type={toggle ? "password" : "text"}
+                name="password"
+                placeholder="Password"
+                className="w-full px-4 py-3 rounded-md border-secondary-content bg-base-100 text-secondary focus:border-default-400"
+              />
+              <span
+                className="absolute right-2 cursor-pointer"
+                onClick={handleToggle}
+              >
+                {(!toggle && (
+                  <svg
+                    className="w-6 h-6 text-secondary-content"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"
+                    />
+                    <path
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                )) || (
+                  <svg
+                    className="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M3.933 13.909A4.357 4.357 0 0 1 3 12c0-1 4-6 9-6m7.6 3.8A5.068 5.068 0 0 1 21 12c0 1-3 6-9 6-.314 0-.62-.014-.918-.04M5 19 19 5m-4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                )}
+              </span>
+            </div>
             {errors.password && (
               <span className="text-primary">Password is required</span>
             )}
