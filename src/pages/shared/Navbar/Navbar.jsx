@@ -25,36 +25,32 @@ const Navbar = () => {
   };
 
   const userProfile = (
-    <div className="dropdown dropdown-end">
-      <div
-        className="tooltip tooltip-left"
-        data-tip={user?.displayName || "Name isn't available"}
-      >
+    <details className="dropdown">
+      <summary className="btn btn-xs bg-base-100 hover:bg-base-100 border-none">
         <div
-          tabIndex={0}
-          role="button"
-          className="btn btn-ghost btn-circle avatar"
+          className="tooltip tooltip-left"
+          data-tip={user?.displayName || "Name isn't available"}
         >
-          <div className="w-10 rounded-full">
-            <img
-              alt="Profile"
-              src={
-                user?.photoURL ||
-                "https://media.istockphoto.com/id/1455787504/vector/round-anonymous-person-icon-vector.jpg?s=1024x1024&w=is&k=20&c=6Zhn2vgAOOh4nljgJqJ_wjYCY_c2rWcxyFeMq698BYk="
-              }
-            />
+          <div className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full">
+              <img
+                alt="Profile"
+                src={
+                  user?.photoURL ||
+                  "https://media.istockphoto.com/id/1455787504/vector/round-anonymous-person-icon-vector.jpg?s=1024x1024&w=is&k=20&c=6Zhn2vgAOOh4nljgJqJ_wjYCY_c2rWcxyFeMq698BYk="
+                }
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <ul
-        tabIndex={0}
-        className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-white rounded-box w-40"
-      >
+      </summary>
+
+      <ul className="p-2 shadow menu dropdown-content z-[100] bg-base-100 rounded-box w-52">
         <li>
           <Link to="update-profile">Update Profile</Link>
         </li>
       </ul>
-    </div>
+    </details>
   );
 
   const userToggle = (

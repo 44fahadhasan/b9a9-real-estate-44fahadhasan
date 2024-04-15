@@ -52,7 +52,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "update-profile",
-        element: <UpdateProfile />,
+        element: (
+          <PrivateRoutes>
+            <UpdateProfile />
+          </PrivateRoutes>
+        ),
       },
       {
         path: "coffee-details/:id",
