@@ -25,7 +25,6 @@ const CoffeMenus = () => {
     setFilterCoffee(allCoffeeData);
   };
 
-  console.log(filterCoffee.length);
   return (
     <div>
       <BannerImgTitle img={coffeMenuBanerImg} title="Coffee Menu" />
@@ -41,22 +40,22 @@ const CoffeMenus = () => {
         </div>
 
         {/* filter button */}
-        <div className="flex gap-8 justify-center mt-[70px]">
+        <div className="roboto flex gap-8 justify-center mt-[70px]">
           <button
             onClick={() => handleFilter("all")}
-            className="btn btn-active btn-neutral"
+            className="btn text-secondary uppercase bg-base-200 hover:bg-primary transition-all duration-200"
           >
             All
           </button>
           <button
             onClick={() => handleFilter("hotCoffee")}
-            className="btn btn-active btn-neutral"
+            className="btn text-secondary uppercase bg-base-200 hover:bg-primary transition-all duration-200"
           >
             Hot Coffee
           </button>
           <button
             onClick={() => handleFilter("dessert")}
-            className="btn btn-active btn-neutral"
+            className="btn text-secondary uppercase bg-base-200 hover:bg-primary transition-all duration-200"
           >
             Dessert
           </button>

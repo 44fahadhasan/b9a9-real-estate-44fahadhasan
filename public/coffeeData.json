@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://i.ibb.co/nMwDBVC/menu1.jpg",
+    "image": "https://i.ibb.co/YbjgcJw/hot-coffee-one.jpg",
     "title": "Arabica Supreme",
     "coffeeName": "Arabica Supreme Blend",
     "description": "A premium blend of Arabica beans sourced from the high altitudes of Ethiopia and Colombia. This coffee offers a smooth and rich flavor profile with notes of chocolate and citrus.",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "image": "https://i.ibb.co/2YtL9SG/menu3.jpg",
+    "image": "https://i.ibb.co/TMWv08S/hot-coffee-two.jpg",
     "title": "Espresso Italia",
     "coffeeName": "Espresso Italia Blend",
     "description": "Experience the quintessential Italian espresso with our Espresso Italia blend. Crafted from a blend of premium Arabica and Robusta beans, this espresso offers a bold and intense flavor profile with a lingering finish.",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "image": "https://i.ibb.co/SRJzKKR/menu4.jpg",
+    "image": "https://i.ibb.co/6r8wWPZ/close-up-coffee-cup-wooden-table-steam-rising-generative-ai.jpg",
     "title": "Decaf Delight",
     "coffeeName": "Decaf Delight Blend",
     "description": "Savor the rich and smooth taste of our Decaf Delight blend, perfect for those who love coffee without the caffeine. This blend features carefully selected decaffeinated beans with a balanced flavor and low acidity.",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "image": "https://i.ibb.co/RzW67X1/menu5.jpg",
+    "image": "https://i.ibb.co/nMwDBVC/menu1.jpg",
     "title": "Single Origin Ethiopia",
     "coffeeName": "Single Origin Ethiopian",
     "description": "Embark on a journey to Ethiopia with our Single Origin Ethiopian coffee. Sourced from the birthplace of coffee itself, this coffee offers bright acidity, floral aroma, and fruity notes of blueberry and jasmine.",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "image": "https://i.ibb.co/7pXFSR9/menu6.jpg",
+    "image": "https://i.ibb.co/Gdy95x5/coffe.jpg",
     "title": "House Blend",
     "coffeeName": "House Blend",
     "description": "Our signature House Blend is a versatile and balanced coffee, perfect for any occasion. With a harmonious blend of Arabica and Robusta beans, this coffee offers a smooth and satisfying flavor with a hint of sweetness.",
