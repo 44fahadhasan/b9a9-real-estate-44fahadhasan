@@ -5,7 +5,7 @@
     "title": "Arabica Supreme",
     "coffeeName": "Arabica Supreme Blend",
     "description": "A premium blend of Arabica beans sourced from the high altitudes of Ethiopia and Colombia. This coffee offers a smooth and rich flavor profile with notes of chocolate and citrus.",
-    "price": 12.99,
+    "price": 16.99,
     "status": "sale",
     "rating": 12
   },
@@ -25,7 +25,7 @@
     "title": "Espresso Italia",
     "coffeeName": "Espresso Italia Blend",
     "description": "Experience the quintessential Italian espresso with our Espresso Italia blend. Crafted from a blend of premium Arabica and Robusta beans, this espresso offers a bold and intense flavor profile with a lingering finish.",
-    "price": 14.99,
+    "price": 19.99,
     "status": "sale",
     "rating": 34
   },
