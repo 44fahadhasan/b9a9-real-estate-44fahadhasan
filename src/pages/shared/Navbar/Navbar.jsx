@@ -45,9 +45,16 @@ const Navbar = () => {
         </div>
       </summary>
 
-      <ul className="p-2 shadow menu dropdown-content z-[100] bg-base-100 rounded-box w-52">
-        <li>
-          <Link to="update-profile">Update Profile</Link>
+      <ul className="roboto p-2 shadow menu dropdown-content z-[100] bg-base-100 rounded-box w-52">
+        <li className="text-secondary text-base font-medium">
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "text-primary " : "text-secondary "
+            }
+            to="update-profile"
+          >
+            Update Profile
+          </NavLink>
         </li>
       </ul>
     </details>
