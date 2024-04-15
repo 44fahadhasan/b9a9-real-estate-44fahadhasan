@@ -37,7 +37,7 @@ const Navbar = () => {
                 alt="Profile"
                 src={
                   user?.photoURL ||
-                  "https://media.istockphoto.com/id/1455787504/vector/round-anonymous-person-icon-vector.jpg?s=1024x1024&w=is&k=20&c=6Zhn2vgAOOh4nljgJqJ_wjYCY_c2rWcxyFeMq698BYk="
+                  "https://i.pinimg.com/736x/6d/1e/bf/6d1ebf50b4a2c395dabbd4f8c1670c4b.jpg"
                 }
               />
             </div>
