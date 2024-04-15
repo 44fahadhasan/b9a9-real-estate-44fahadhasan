@@ -13,7 +13,7 @@ const SingleSlider = ({ img, textTop, textBottom }) => {
       ]}
       className="aspect-[2/1]"
     >
-      <div className="absolute inset-0 flex flex-col items-center sm:items-start justify-center sm:ml-[10%]">
+      <div className="absolute inset-0 flex flex-col items-center sm:items-start justify-center container mx-auto w-[85%]">
         <div className="flex items-center space-x-1">
           <div className="flex-1 h-[2px] sm:w-8 bg-primary"></div>
           <p className="text-sm sm:text-base text-secondary uppercase">

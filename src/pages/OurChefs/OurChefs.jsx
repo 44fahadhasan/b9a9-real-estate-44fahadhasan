@@ -2,6 +2,7 @@ import ourChefs from "../../assets/images/team-inner-bg-overlay.jpg";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import useDataLoader from "../../hooks/useDataLoader";
 import BannerImgTitle from "../shared/BannerImgTitle/BannerImgTitle";
+import NeedTable from "../shared/NeedTable/NeedTable";
 import ChefsCard from "./ChefsCard/ChefsCard";
 const OurChefs = () => {
   const chefsData = useDataLoader("/public/chefsData.json");
@@ -30,6 +31,8 @@ const OurChefs = () => {
           </div>
         </section>
       </section>
+
+      <NeedTable />
     </div>
   );
 };
