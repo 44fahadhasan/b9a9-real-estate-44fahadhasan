@@ -53,7 +53,6 @@ const Reservation = () => {
                   </div>
                 </div>
               </div>
-
               <div className="-mx-3 flex flex-wrap">
                 <div className="w-full px-3 sm:w-1/2">
                   <div className="mb-5">
@@ -92,7 +91,6 @@ const Reservation = () => {
                   </div>
                 </div>
               </div>
-
               <div className="-mx-3 flex flex-wrap">
                 <div className="w-full px-3 sm:w-1/2">
                   <div className="mb-5">
@@ -128,42 +126,43 @@ const Reservation = () => {
                 </div>
               </div>
 
-              <div className="mb-5">
-                <label className="mb-3 block text-base font-medium text-secondary">
+              <div className="mb-5 col-span-full">
+                <h6 className="text-base font-medium text-secondary">
                   Are you coming to the event?
-                </label>
-                <div className="flex items-center space-x-6">
-                  <div className="flex items-center">
+                </h6>
+                <div className="flex max-lg:flex-col lg:space-x-6 max-lg:space-y-6">
+                  <div className="flex items-center mt-3">
                     <input
+                      id="radio2"
                       type="radio"
-                      name="radio1"
-                      id="radioButton1"
-                      className="h-3 w-3"
+                      name="value1"
+                      className="hidden peer"
                     />
                     <label
-                      htmlFor="radioButton1"
-                      className="pl-3 text-base font-medium text-secondary"
+                      htmlFor="radio2"
+                      className="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white w-5 h-5 cursor-pointer border-2  rounded-full overflow-hidden"
                     >
-                      Yes
+                      <span className="border-[0px]  rounded-full w-full h-full"></span>
                     </label>
+                    <p className="text-sm ml-3 ">Yes</p>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center mt-3">
                     <input
+                      id="radio3"
                       type="radio"
-                      name="radio1"
-                      id="radioButton2"
-                      className="h-3 w-3"
+                      name="value1"
+                      className="hidden peer"
                     />
                     <label
-                      htmlFor="radioButton2"
-                      className="pl-3 text-base font-medium text-secondary"
+                      htmlFor="radio3"
+                      className="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white w-5 h-5 cursor-pointer border-2  rounded-full overflow-hidden"
                     >
-                      No
+                      <span className="border-[0px]  rounded-full w-full h-full"></span>
                     </label>
+                    <p className="text-sm ml-3 ">No</p>
                   </div>
                 </div>
               </div>
-
               <div className="flex justify-center">
                 <a
                   href="#"
