@@ -4,7 +4,7 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 const NeedTable = () => {
   return (
     <div className="bg-[url('https://i.ibb.co/mCr0fcP/service3.png')] bg-cover bg-no-repeat bg-center py-[70px] bg-fixed ">
-      <div className="flex items-center container mx-auto w-[85%]">
+      <div className="flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row items-center container mx-auto w-[85%]">
         <SectionTitle
           style="sm:text-left"
           topText="NEED A TABLE ON COFFEE HOUSE"
