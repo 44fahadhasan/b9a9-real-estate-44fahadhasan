@@ -1,3 +1,4 @@
+import CoffeeGallery from "../shared/CoffeeGallery/CoffeeGallery";
 import NeedTable from "../shared/NeedTable/NeedTable";
 import Testimonial from "../shared/Testimonial/Testimonial";
 import PopularCoffee from "./PopularCoffee/PopularCoffee";
@@ -13,6 +14,8 @@ const Home = () => {
       <section className="bg-[url('https://i.ibb.co/SsbwvS9/category-bg.jpg')] bg-cover	bg-no-repeat bg-center py-[130px] bg-fixed">
         <PopularCoffee />
       </section>
+
+      <CoffeeGallery />
 
       <Testimonial />
 

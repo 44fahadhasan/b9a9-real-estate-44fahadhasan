@@ -4,7 +4,6 @@ import TestimonialCard from "../TestimonialCard/TestimonialCard";
 
 const Testimonial = () => {
   const customerReviewData = useDataLoader("/public/customerReviewData.json");
-  console.log(customerReviewData);
   return (
     <section className="bg-[url('https://i.ibb.co/fk989kz/testimonials-bg2.jpg')] bg-cover  bg-no-repeat bg-center py-[130px]">
       {/* section title */}
