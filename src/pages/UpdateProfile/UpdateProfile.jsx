@@ -24,7 +24,7 @@ const UpdateProfile = () => {
       .then(() => {
         // Profile updated!
         setEditInput(true);
-        return toast.success("Profile updated successfull");
+        return toast.success("Page reload now.Profile updated successfull");
       })
       .catch((error) => {
         // An error occurred
