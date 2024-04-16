@@ -2,6 +2,7 @@ import BannerImgTitle from "../shared/BannerImgTitle/BannerImgTitle";
 
 import reservationBannerImg from "../../assets/images/menu_reservation_inner_bg2.jpg";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import CoffeeBrand from "../shared/CoffeeBrand/CoffeeBrand";
 
 const Reservation = () => {
   return (
@@ -192,6 +193,8 @@ const Reservation = () => {
           </div>
         </div>
       </div>
+
+      <CoffeeBrand />
     </div>
   );
 };

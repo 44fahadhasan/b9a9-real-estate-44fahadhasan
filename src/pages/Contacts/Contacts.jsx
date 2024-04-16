@@ -3,6 +3,7 @@ import { LiaEnvelopeOpenTextSolid, LiaHeadsetSolid } from "react-icons/lia";
 import contactBannerImg from "../../assets/images/menu-reservation-inner-bg.jpg";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import BannerImgTitle from "../shared/BannerImgTitle/BannerImgTitle";
+import CoffeeBrand from "../shared/CoffeeBrand/CoffeeBrand";
 
 const Contacts = () => {
   return (
@@ -254,6 +255,8 @@ const Contacts = () => {
           </div>
         </section>
       </div>
+
+      <CoffeeBrand />
     </>
   );
 };

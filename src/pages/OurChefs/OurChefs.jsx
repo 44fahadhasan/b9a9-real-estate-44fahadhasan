@@ -2,6 +2,7 @@ import ourChefs from "../../assets/images/team-inner-bg-overlay.jpg";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import useDataLoader from "../../hooks/useDataLoader";
 import BannerImgTitle from "../shared/BannerImgTitle/BannerImgTitle";
+import CoffeeBrand from "../shared/CoffeeBrand/CoffeeBrand";
 import NeedTable from "../shared/NeedTable/NeedTable";
 import Testimonial from "../shared/Testimonial/Testimonial";
 import ChefsCard from "./ChefsCard/ChefsCard";
@@ -36,6 +37,8 @@ const OurChefs = () => {
       <NeedTable />
 
       <Testimonial />
+
+      <CoffeeBrand />
     </div>
   );
 };
