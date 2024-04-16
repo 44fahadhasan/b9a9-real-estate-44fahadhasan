@@ -26,7 +26,7 @@ const Login = () => {
     userLogin(email, password)
       .then(() => {
         // Signed in
-        navigate(`${location?.state || "/"}`);
+        navigate(`${location?.state || "update-profile"}`);
         toast.success("Login successful by email account");
       })
       .catch((error) => {
@@ -40,7 +40,7 @@ const Login = () => {
   const handleSocialLogin = (socialLogin) => {
     socialLogin()
       .then(() => {
-        navigate(`${location?.state || "/"}`);
+        navigate(`${location?.state || "update-profile"}`);
         toast.success("Login successful by social account");
       })
       .catch((error) => {

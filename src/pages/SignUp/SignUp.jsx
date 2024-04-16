@@ -37,7 +37,7 @@ const SignUp = () => {
         // user profile
         updateUserProfile(fullName, photourl);
         toast.success("Created an new account successfully");
-        navigate(`${location?.state || "/"}`);
+        navigate(`${location?.state || "update-profile"}`);
       })
       .catch((error) => {
         toast.error(error.message);
