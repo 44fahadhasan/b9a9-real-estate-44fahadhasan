@@ -19,5 +19,12 @@
     "customerName": "Sophia Lee",
     "feeling": "Pleasantly surprised",
     "img": "https://i.ibb.co/RjpNkTH/rev3.jpg"
+  },
+  {
+    "id": 4,
+    "reviewText": "This coffee shop has become my go-to spot for meetings and solo work sessions. The ambiance is perfect for productivity, and the staff is always friendly and accommodating. Highly recommend!",
+    "customerName": "David Johnson",
+    "feeling": "Impressed",
+    "img": "https://i.ibb.co/kBhsHGr/sincerely-media-uu-Rw-SS1hx-Q-unsplash.jpg"
   }
 ]
