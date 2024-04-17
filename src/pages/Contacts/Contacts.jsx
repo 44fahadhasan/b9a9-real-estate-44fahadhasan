@@ -13,7 +13,12 @@ const Contacts = () => {
       <div className="roboto container mx-auto w-[85%] bg-base-100 py-[130px]">
         <section>
           <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+              className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center"
+            >
               <GrMapLocation className="text-7xl text-primary" />
 
               <h2 className="oswald  my-4 text-2xl text-secondary">
@@ -32,7 +37,12 @@ const Contacts = () => {
               <p className="mt-2 text-secondary-content">3rd Floor, USA</p>
             </div>
 
-            <div className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center"
+            >
               <LiaEnvelopeOpenTextSolid className="text-7xl text-primary" />
 
               <h2 className="oswald  my-4 text-2xl text-secondary">
@@ -51,7 +61,12 @@ const Contacts = () => {
               <p className="mt-2 text-secondary-content">www.kaffeninfo.web</p>
             </div>
 
-            <div className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="150"
+              className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center"
+            >
               <LiaHeadsetSolid className="text-7xl text-primary" />
 
               <h2 className="oswald  my-4 text-2xl text-secondary">
@@ -68,7 +83,12 @@ const Contacts = () => {
           </div>
         </section>
 
-        <section className="mt-[130px] bg-base-200 p-[45px] pt-[80px]">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="50"
+          className="mt-[130px] bg-base-200 p-[45px] pt-[80px]"
+        >
           <SectionTitle
             style="sm:text-center"
             topText="CONTACT US"
