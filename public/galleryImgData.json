@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/2hMPFKQ/grid-gal2.jpg",
+    "coffeeName": "Espresso"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/wwtFcWM/grid-gal4.jpg",
+    "coffeeName": "Cappuccino"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/5jTVN7j/grid-gal1.jpg",
+    "coffeeName": "Latte"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/Bs3sn2c/coffe-o-ga-3.jpg",
+    "coffeeName": "Mocha"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/G5FBPkD/coffe-o-ga-2.jpg",
+    "coffeeName": "Americano"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/BPtPrQT/grid-gal3.jpg",
+    "coffeeName": "Flat White"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/gDdgwGw/coffe-o-ga-1.jpg",
+    "coffeeName": "Macchiato"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/Nt5nzhF/menu2.jpg",
+    "coffeeName": "Dark Coffee"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/nMwDBVC/menu1.jpg",
+    "coffeeName": "Turkish Coffee"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/6r8wWPZ/close-up-coffee-cup-wooden-table-steam-rising-generative-ai.jpg",
+    "coffeeName": "Affogato"
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/Gdy95x5/coffe.jpg",
+    "coffeeName": "Cortado"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/YbjgcJw/hot-coffee-one.jpg",
+    "coffeeName": "Frappe"
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co/TMWv08S/hot-coffee-two.jpg",
+    "coffeeName": "Cold Brew"
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co/5jTVN7j/grid-gal1.jpg",
+    "coffeeName": "Nitro Coffee"
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co/LgvPbTs/grid-gal5.jpg",
+    "coffeeName": "Red Eye"
+  }
+]
