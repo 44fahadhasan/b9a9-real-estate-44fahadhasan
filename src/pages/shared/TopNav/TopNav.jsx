@@ -1,7 +1,7 @@
 const TopNav = () => {
   return (
-    <section className="py-[10px] bg-base-200">
-      <div className="hidden roboto lg:grid  grid-cols-3 items-center w-[95%] mx-auto">
+    <section className="hidden lg:block py-[10px] bg-base-200">
+      <div className=" roboto lg:grid  grid-cols-3 items-center w-[95%] mx-auto">
         <div className="flex  gap-1 items-center text-sm uppercase">
           <svg
             xmlns="http://www.w3.org/2000/svg"
