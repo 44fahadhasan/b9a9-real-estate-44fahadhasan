@@ -51,7 +51,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? "text-primary " : "text-secondary "
             }
-            to="update-profile"
+            to="/"
           >
             Update Profile
           </NavLink>
