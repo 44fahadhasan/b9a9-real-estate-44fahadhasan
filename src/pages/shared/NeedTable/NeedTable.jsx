@@ -10,7 +10,7 @@ const NeedTable = () => {
           topText="NEED A TABLE ON COFFEE HOUSE"
           BottomText="Booking Table For Your & Family Members"
         />
-        <div>
+        <div className="w-[220px]">
           <Link
             to="/reservation"
             className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium uppercase transition-all bg-primary rounded hover:bg-base-100 group"
