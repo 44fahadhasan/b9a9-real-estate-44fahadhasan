@@ -4,6 +4,7 @@ import Testimonial from "../shared/Testimonial/Testimonial";
 import AboutUs from "./AboutUs/AboutUs";
 import PopularCoffee from "./PopularCoffee/PopularCoffee";
 import Slider from "./Slider/Slider";
+import WhyChoose from "./WhyChoose/WhyChoose";
 
 const Home = () => {
   return (
@@ -18,6 +19,10 @@ const Home = () => {
 
       <section className="bg-[url('https://i.ibb.co/SsbwvS9/category-bg.jpg')] bg-cover	bg-no-repeat bg-center py-[130px] bg-fixed">
         <PopularCoffee />
+      </section>
+
+      <section className="bg-base-200 py-[130px]">
+        <WhyChoose />
       </section>
 
       <CoffeeGallery />
