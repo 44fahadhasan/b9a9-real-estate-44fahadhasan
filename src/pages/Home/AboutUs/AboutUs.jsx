@@ -13,7 +13,12 @@ const AboutUs = () => {
             BottomText="Organic & Fresh Coffee Provider Center"
           />
         </div>
-        <p className="mt-4 text-secondary-content">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          className="mt-4 text-secondary-content"
+        >
           Freshness is crucial for coffee quality. The center might focus on
           sourcing coffee beans directly from farmers or from regions known for
           their coffee production to ensure that the beans are as fresh as
@@ -21,7 +26,12 @@ const AboutUs = () => {
           beans to maintain quality and flavor.
         </p>
 
-        <div className="flex items-center gap-4 bg-primary p-5 rounded-lg mt-8">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          className="flex items-center gap-4 bg-primary p-5 rounded-lg mt-8"
+        >
           <img
             src={quoteImg}
             alt="quote_img"
@@ -37,7 +47,7 @@ const AboutUs = () => {
       </div>
 
       {/* img area */}
-      <div className="">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
         <img
           src={aboutImg}
           alt="about-us-img"

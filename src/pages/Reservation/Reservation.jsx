@@ -9,14 +9,24 @@ const Reservation = () => {
     <div>
       <BannerImgTitle img={reservationBannerImg} title="Reservation" />
 
-      <div className="my-[130px] container mx-auto w-[85%]">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="50"
+        className="my-[130px] container mx-auto w-[85%]"
+      >
         <div className="p-[30px] sm:p-[45px] sm:pt-[80px] mx-auto w-full max-w-[770px] bg-base-200 border-t-[3px] border-primary">
           <SectionTitle
             style="sm:text-center"
             topText="BOOKING TABLE"
             BottomText="Make Your Reservation"
           />
-          <div className="roboto pt-[30px] ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+            className="roboto pt-[30px] "
+          >
             <form>
               <div className="-mx-3 flex flex-wrap">
                 <div className="w-full px-3 sm:w-1/2">

@@ -4,7 +4,12 @@ const TestimonialCard = ({
   customerReviewData: { img, reviewText, customerName, feeling } = {},
 }) => {
   return (
-    <div className="roboto bg-base-100 rounded-sm px-[30px] pb-[30px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="150"
+      className="roboto bg-base-100 rounded-sm px-[30px] pb-[30px]"
+    >
       <div className="mx-auto w-[70px] h-[70px] relative -mt-8 rounded-full overflow-hidden">
         <img
           className="object-cover object-center w-full h-full"

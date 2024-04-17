@@ -8,7 +8,12 @@ import logo from "../../../assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <div className="roboto divide-y-2 divide-base-100 bg-base-200 text-secondary">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="50"
+      className="roboto divide-y-2 divide-base-100 bg-base-200 text-secondary"
+    >
       {/* footer top */}
       <div className="container w-[85%] mx-auto grid gap-9 justify-items-center sm:justify-items-start	  justify-center sm:grid-cols-3 lg:grid-cols-4 py-[70px]">
         {/* logo */}

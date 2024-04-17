@@ -15,16 +15,34 @@ const SingleSlider = ({ img, textTop, textBottom }) => {
     >
       <div className="absolute inset-0 flex flex-col items-center sm:items-start justify-center container mx-auto w-[85%]">
         <div className="flex items-center space-x-1">
-          <div className="flex-1 h-[2px] sm:w-8 bg-primary"></div>
-          <p className="text-sm sm:text-base text-secondary uppercase">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            className="flex-1 h-[2px] sm:w-8 bg-primary"
+          ></div>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="text-sm sm:text-base text-secondary uppercase"
+          >
             Welcome to the Kaffen
           </p>
         </div>
-        <h1 className="oswald text-[40px] leading-[50px]  sm:text-[90px] sm:leading-[100px] lg:text-[120px] lg:leading-[144px] font-medium text-secondary mt-5">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="150"
+          className="oswald text-[40px] leading-[50px]  sm:text-[90px] sm:leading-[100px] lg:text-[120px] lg:leading-[144px] font-medium text-secondary mt-5"
+        >
           {textTop} <br /> {textBottom}
         </h1>
         <div className="hidden sm:block space-x-4 mt-9">
           <Link
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
             to="coffe-menu"
             className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium uppercase transition-all bg-primary rounded hover:bg-base-100 group"
           >
@@ -48,6 +66,9 @@ const SingleSlider = ({ img, textTop, textBottom }) => {
             </svg>
           </Link>
           <Link
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="250"
             to="reservation"
             className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium uppercase transition-all bg-base-100 rounded hover:bg-primary group"
           >

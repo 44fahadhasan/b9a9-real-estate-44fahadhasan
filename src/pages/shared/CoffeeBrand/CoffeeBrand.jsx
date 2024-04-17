@@ -7,7 +7,11 @@ import brandSix from "../../../assets/images/brand6.png";
 
 const CoffeeBrand = () => {
   return (
-    <section className="bg-base-100 py-[70px]">
+    <section
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      className="bg-base-100 py-[70px]"
+    >
       <div className="grid gap-8 grid-cols-2 sm:grid-cols-6 sm:gap-10 lg:gap-5 container mx-auto w-[85%]">
         <div className="flex justify-center items-center">
           <img

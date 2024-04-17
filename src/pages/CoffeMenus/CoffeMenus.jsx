@@ -41,7 +41,12 @@ const CoffeMenus = () => {
         </div>
 
         {/* filter button */}
-        <div className="roboto flex gap-8 justify-center mt-[70px]">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="150"
+          className="roboto flex gap-8 justify-center mt-[70px]"
+        >
           <button
             onClick={() => handleFilter("all")}
             className="btn text-secondary uppercase bg-base-200 hover:bg-primary transition-all duration-200"

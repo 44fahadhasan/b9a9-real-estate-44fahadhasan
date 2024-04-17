@@ -19,7 +19,12 @@ const Home = () => {
 
       <section className="bg-base-100 py-[70px] drop-shadow-sm border-b-2 border-base-200">
         <div className="grid justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-9 container mx-auto w-[85%]">
-          <div className="flex gap-6 mt-8">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            className="flex gap-6 mt-8"
+          >
             <div className="basis-[20%]">
               <h1 className="oswald text-[50px] sm:text-[60px] text-primary font-light">
                 256+
@@ -34,7 +39,12 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 mt-8">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+            className="flex gap-6 mt-8"
+          >
             <div className="basis-[20%]">
               <h1 className="oswald text-[50px] sm:text-[60px] text-primary font-light">
                 362+
@@ -48,7 +58,12 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 mt-8">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="flex gap-6 mt-8"
+          >
             <div className="basis-[20%]">
               <h1 className="oswald text-[50px] sm:text-[60px] text-primary font-light">
                 753+

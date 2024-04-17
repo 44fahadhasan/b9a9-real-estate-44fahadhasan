@@ -40,7 +40,7 @@ const Contacts = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="100"
+              data-aos-delay="150"
               className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center"
             >
               <LiaEnvelopeOpenTextSolid className="text-7xl text-primary" />
@@ -64,7 +64,7 @@ const Contacts = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="150"
+              data-aos-delay="200"
               className="bg-base-200 p-[45px] flex flex-col items-center justify-center text-center"
             >
               <LiaHeadsetSolid className="text-7xl text-primary" />
@@ -83,19 +83,19 @@ const Contacts = () => {
           </div>
         </section>
 
-        <section
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="50"
-          className="mt-[130px] bg-base-200 p-[45px] pt-[80px]"
-        >
+        <section className="mt-[130px] bg-base-200 p-[45px] pt-[80px]">
           <SectionTitle
             style="sm:text-center"
             topText="CONTACT US"
             BottomText="Send Us Message"
           />
 
-          <div className="p-[30px] rounded-xl lg:col-span-2">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+            className="p-[30px] rounded-xl lg:col-span-2"
+          >
             <form>
               <div className="grid sm:grid-cols-2 gap-8">
                 <div className="relative flex items-center">

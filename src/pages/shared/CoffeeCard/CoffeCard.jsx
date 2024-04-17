@@ -5,7 +5,12 @@ const CoffeCard = ({ coffeeData = {} }) => {
   const { id, image, title, description, price, status } = coffeeData;
 
   return (
-    <div className="flex flex-col items-center sm:flex-row sm:items-start gap-3 sm:gap-[45px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="150"
+      className="flex flex-col items-center sm:flex-row sm:items-start gap-3 sm:gap-[45px]"
+    >
       <div className="w-[50%] sm:w-[150px] h-[160px]">
         <img
           src={image}

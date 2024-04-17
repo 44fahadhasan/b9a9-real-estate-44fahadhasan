@@ -4,7 +4,12 @@ const ChefsCard = ({
   chefInpfo: { chefName, img, level, facebook, twitter, youTube } = {},
 }) => {
   return (
-    <div className="space-y-4 roboto p-6 bg-base-100 border-base-100 hover:border-primary border-b-2 transition-all duration-300">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="150"
+      className="space-y-4 roboto p-6 bg-base-100 border-base-100 hover:border-primary border-b-2 transition-all duration-300"
+    >
       <img
         src={img}
         alt={chefName}

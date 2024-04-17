@@ -54,7 +54,13 @@ const Login = () => {
   };
 
   return (
-    <div className="my-[130px] container mx-auto w-[85%]">
+    <div
+      // data-aos="fade-up"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="200"
+      className="my-[130px] container mx-auto w-[85%]"
+    >
       <div className="roboto w-full mx-auto max-w-[770px] p-8 space-y-3  bg-base-200 text-secondary border-t-[3px] border-primary">
         <Tost />
         <h1 className="text-3xl font-bold text-center">Login</h1>

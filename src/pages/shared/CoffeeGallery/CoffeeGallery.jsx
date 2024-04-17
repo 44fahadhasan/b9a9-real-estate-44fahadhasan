@@ -7,7 +7,12 @@ const CoffeeGallery = () => {
   const galleryDatas = useDataLoader("/public/galleryImgData.json");
 
   return (
-    <div className="bg-base-100 py-[130px]">
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos-delay="100"
+      className="bg-base-100 py-[130px]"
+    >
       <div className="container mx-auto w-[85%] ">
         {/* Swiper start */}
         <Swiper
